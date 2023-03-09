@@ -1,0 +1,7 @@
+.loop-header{
+    width: calc(100% - 200px);
+    height: 500px;
+    background-image: url(/images/desktop/image-hero.jpg);
+    padding: 50px 100px;
+    font-family: 'Alata', sans-serif;
+}
