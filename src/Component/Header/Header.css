@@ -1,7 +1,19 @@
 .loop-header{
     width: calc(100% - 200px);
-    height: 500px;
-    background-image: url(/images/desktop/image-hero.jpg);
+    height: 450px;
+    background-image: url(/src/images/desktop/image-hero.jpg);
     padding: 50px 100px;
     font-family: 'Alata', sans-serif;
+}
+
+
+@media screen and (max-width: 480px){
+    .loop-header{
+        width: 80%;
+        height: 88.5vh;
+        background-image: url(/src/images/mobile/image-hero.jpg);
+        background-size: contain;
+        padding: 30px 10%;
+    }
+
 }

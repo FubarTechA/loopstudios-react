@@ -1,0 +1,13 @@
+main{
+    width: 85%;
+    margin: 100px 7.5%;
+    /* height: 500px; */
+    /* border: 1px solid black; */
+}
+
+@media screen and (max-width: 480px){
+    main{
+        width: 80%;
+        margin: 60px 10%;
+    }
+}

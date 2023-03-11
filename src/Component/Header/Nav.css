@@ -2,5 +2,82 @@ nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: hsl(0, 0%, 100%);
+}
+
+.logo-div{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.nav-list{
+    display: flex;
+}
+
+.nav-list__link{
+    list-style-type: none;
+    padding-left: 15px;
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.burger-menu-logo{
+    display: none;
+}
+
+.hamburger-div{
+    display: none;
+}
+
+.close-div{
+display: none;
+}
+
+
+@media screen and (max-width: 480px){
+
+    .nav-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        height: 100vh;
+        display: none;
+    }
+
+    .hamburger-div{
+        display: block;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        position: absolute;
+        top: 25%;
+    }
+
+    .nav-list__link{
+        font-size: 24px;
+        font-weight: 100;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    .burger-menu-logo{
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        font-size: 24px;
+    }
+
+    .close-div{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+    }
+    
 }

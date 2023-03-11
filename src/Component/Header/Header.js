@@ -2,11 +2,13 @@ import React from 'react';
 
 import './Header.css'
 import Nav from './Nav'
+import HeaderBanner from './HeaderBanner'
 
 const Header = () => {
-    return <div className='loop-header'>
+    return <header className='loop-header'>
         <Nav />
-    </div>
+        <HeaderBanner />
+    </header>
 }
 
 export default Header
