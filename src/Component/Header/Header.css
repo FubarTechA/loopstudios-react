@@ -10,7 +10,7 @@
 @media screen and (max-width: 480px){
     .loop-header{
         width: 80%;
-        height: 88.5vh;
+        height: 73vh;
         background-image: url(/src/images/mobile/image-hero.jpg);
         background-size: contain;
         padding: 30px 10%;

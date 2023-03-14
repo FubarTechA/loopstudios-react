@@ -1,13 +1,27 @@
 main{
     width: 85%;
-    margin: 100px 7.5%;
+    margin: 100px 7.5% 150px;
     /* height: 500px; */
     /* border: 1px solid black; */
 }
+
+.see-btn{
+    display: none;
+}
+
 
 @media screen and (max-width: 480px){
     main{
         width: 80%;
         margin: 60px 10%;
+    }
+
+    .see-btn{
+        display: block;
+        margin: 50px auto;
+        background-color: transparent;
+        outline: none;
+        border: 1px solid hsl(0, 0%, 0%);
+        padding: 5px 20px;
     }
 }

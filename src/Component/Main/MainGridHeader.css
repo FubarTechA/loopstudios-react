@@ -30,9 +30,6 @@
     }
 
     .main-grid__header button{
-        position: relative;
-        bottom:  500px;
-        left: 50%;
-        transform: translateX(-50%);
+        display: none;
     }
 }
