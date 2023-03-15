@@ -55,9 +55,6 @@ display: none;
 
 
 @media screen and (max-width: 480px){
-    nav{
-    }
-
     .nav-container{
         position: fixed;
         top: 0;

@@ -8,7 +8,6 @@ import close from '../../images/icon-close.svg';
 const Nav = () => {
 
     const mouseOverHandler = (event) => {
-        console.log(event.target)
         event.target.classList.add('hover')
     }
 
@@ -18,7 +17,6 @@ const Nav = () => {
     }
 
     const openClickHandler = (event) => {
-        console.log('clicked')
         const NavMenu = document.querySelector('.nav-container')
         NavMenu.classList.add('show')
     }
