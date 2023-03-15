@@ -21,6 +21,24 @@ nav{
     padding-left: 15px;
     font-size: 15px;
     font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+}
+
+.nav-list__link::after{
+    position: absolute;
+    content: '';
+    /* width: 20%; */
+    border: 1px solid white;
+    left: 50%;
+    top: 17px;
+    width: 0;
+    opacity: 0;
+    transition: ease-in all .3s;
+}
+
+.nav-list__link.hover::after{
+    opacity: 1;
+    width: 20%;
 }
 
 .burger-menu-logo{
@@ -37,15 +55,22 @@ display: none;
 
 
 @media screen and (max-width: 480px){
+    nav{
+    }
 
     .nav-container{
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: 0;
+        right: -100%;
         width: 100%;
         background-color: black;
         height: 100vh;
-        display: none;
+        z-index: 100;
+        transition: ease-in all .5s;
+    }
+
+    .nav-container.show{
+        right: 0;
     }
 
     .hamburger-div{

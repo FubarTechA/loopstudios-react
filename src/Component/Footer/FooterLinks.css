@@ -1,5 +1,45 @@
 .footer-links{
     width: 100%;
-    border: 1px solid white;
-    height: 50px;
+}
+
+.footer-logo{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.footer-link__list{
+    display: flex;
+}
+
+.footer-link__list li{
+    padding: 0 20px;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+
+.footer-link__list li:first-of-type{
+    padding-left: 0;
+}
+
+@media screen and (max-width: 480px){
+
+    .footer-logo{
+        margin-bottom: 10px;
+    }
+    
+
+    .footer-link__list{
+        flex-direction: column;
+    }
+    .footer-link__list li:first-of-type{
+        padding-left: 0;
+    }
+
+    .footer-link__list li{
+        padding: 5px 0;
+        list-style: none;
+        font-family: 'Josefin Sans', sans-serif; 
+    }
+    
 }

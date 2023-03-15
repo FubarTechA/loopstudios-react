@@ -35,7 +35,7 @@ const Main = () => {
     if(window.innerWidth <= 480){
         images = MOBILE_IMAGES;
     }else images = DESKTOP_IMAGES
-    console.log(images)
+    // console.log(images)
     return <main>
         <MainDetails />
         <MainGridContainer />
