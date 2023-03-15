@@ -1,20 +1,16 @@
 import React from 'react';
 
 import './Nav.css';
+import NavLink from './NavLink';
 import hamburger from '../../images/icon-hamburger.svg';
 import close from '../../images/icon-close.svg';
 
 
 const Nav = () => {
 
-    const mouseOverHandler = (event) => {
-        event.target.classList.add('hover')
-    }
+    const linkList = ['About', 'Careers', 'Event', 'Products', 'Support']
 
-    const mouseOutHandler = (event) => {
-        event.target.classList.remove('hover')
-
-    }
+   
 
     const openClickHandler = (event) => {
         const NavMenu = document.querySelector('.nav-container')
@@ -34,11 +30,14 @@ const Nav = () => {
             </div>
             <p className='burger-menu-logo'>loopstudios</p>
             <ul className='nav-list'>
-                <li className='nav-list__link' onMouseOver={mouseOverHandler} onMouseOut={mouseOutHandler}>About</li>
+                {linkList.map(link =>{
+                   return  <NavLink>{link}</NavLink>
+                })}
+                {/* <li className='nav-list__link' onMouseOver={mouseOverHandler} onMouseOut={mouseOutHandler}>About</li>
                 <li className='nav-list__link'  onMouseOver={mouseOverHandler} onMouseOut={mouseOutHandler}>Careers</li>
                 <li className='nav-list__link'  onMouseOver={mouseOverHandler} onMouseOut={mouseOutHandler}>Event</li>
                 <li className='nav-list__link'  onMouseOver={mouseOverHandler} onMouseOut={mouseOutHandler}>Products</li>
-                <li className='nav-list__link'  onMouseOver={mouseOverHandler} onMouseOut={mouseOutHandler}>Support</li>
+                <li className='nav-list__link'  onMouseOver={mouseOverHandler} onMouseOut={mouseOutHandler}>Support</li> */}
             </ul>
         </div>
         <div className='hamburger-div' onClick={openClickHandler}>
