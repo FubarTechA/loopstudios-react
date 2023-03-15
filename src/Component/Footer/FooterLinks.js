@@ -1,16 +1,15 @@
 import React from 'react';
 
 import './FooterLinks.css';
+import FooterLinkItem from './FooterLinkItem';
+
+const footerLinkList = ['About', 'Careers', 'Events', 'Products', 'Support']
 
 const FooterLinks = () => {
     return <div className='footer-links'>
         <p className='footer-logo'>loopstudios</p>
         <ul className='footer-link__list'>
-            <li className='footer-link'>About</li>
-            <li className='footer-link'>Careers</li>
-            <li className='footer-link'>Events</li>
-            <li className='footer-link'>Products</li>
-            <li className='footer-link'>Support</li>
+            {footerLinkList.map(link => <FooterLinkItem>{link}</FooterLinkItem>)}
         </ul>
     </div>
 };

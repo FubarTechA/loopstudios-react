@@ -1,0 +1,39 @@
+.footer-link{
+    padding: 0 20px;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif; 
+    position: relative;
+}
+
+.footer-link::after{
+    position: absolute;
+    content: '';
+    border: 1px solid white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    width: 0;
+    opacity: 0;
+    transition: ease-in all .3s;
+}
+
+.footer-link:first-of-type{
+    padding-left: 0;
+}
+
+.footer-link__list li.hover::after{
+    opacity: 1;
+    width: 20%;
+}
+
+@media screen and (max-width: 480px){
+    .footer-link__list li:first-of-type{
+        padding-left: 0;
+    }
+
+    .footer-link__list li{
+        padding: 5px 0;
+        list-style: none;
+        font-family: 'Josefin Sans', sans-serif; 
+    }
+}

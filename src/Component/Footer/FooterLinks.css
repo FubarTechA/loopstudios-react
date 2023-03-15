@@ -12,15 +12,6 @@
     display: flex;
 }
 
-.footer-link__list li{
-    padding: 0 20px;
-    list-style: none;
-    font-family: 'Josefin Sans', sans-serif; 
-}
-
-.footer-link__list li:first-of-type{
-    padding-left: 0;
-}
 
 @media screen and (max-width: 480px){
 
@@ -31,15 +22,6 @@
 
     .footer-link__list{
         flex-direction: column;
-    }
-    .footer-link__list li:first-of-type{
-        padding-left: 0;
-    }
-
-    .footer-link__list li{
-        padding: 5px 0;
-        list-style: none;
-        font-family: 'Josefin Sans', sans-serif; 
     }
     
 }
