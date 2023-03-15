@@ -27,11 +27,14 @@
 }
 
 @media screen and (max-width: 480px){
-    .footer-link__list li:first-of-type{
+    .footer-link:first-of-type{
         padding-left: 0;
     }
 
-    .footer-link__list li{
+    .footer-link{
+        display: inline-block;
+        width: 50%;
+        margin: 0 auto;
         padding: 5px 0;
         list-style: none;
         font-family: 'Josefin Sans', sans-serif; 

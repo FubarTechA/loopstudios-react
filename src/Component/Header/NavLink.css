@@ -10,7 +10,6 @@
 .nav-list__link::after{
     position: absolute;
     content: '';
-    /* width: 20%; */
     border: 1px solid white;
     left: 50%;
     top: 17px;
