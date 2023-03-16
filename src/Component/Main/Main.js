@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import './Main.css'
 import MainDetails from './MainDetails';
@@ -31,6 +31,17 @@ const GRIDWRITEUP_ARRAY = ['DEEP EARTH', 'NIGHT ARCADE', 'SOCCER TEAM VR', 'THE 
 
 
 const Main = () => {
+    const [isValid, setIsValid] = useState(false)
+
+    const mouseOverHandler = () => {
+        setIsValid(true)
+    }
+
+    const mouseOutHandler = () => {
+        setIsValid(false)
+    };
+
+
     let images; 
     if(window.innerWidth <= 480){
         images = MOBILE_IMAGES;
@@ -40,7 +51,7 @@ const Main = () => {
         <MainDetails />
         <MainGridContainer />
         <MainGrid pictures={images} titles={GRIDWRITEUP_ARRAY}/>
-        <button className='see-btn'>SEE ALL</button>
+        <button className={`see-btn ${isValid && 'hover'}`} onMouseOver={mouseOverHandler} onMouseOut={mouseOutHandler}>SEE ALL</button>
     </main>
 };
 

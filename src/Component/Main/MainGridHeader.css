@@ -15,6 +15,12 @@
     outline: none;
     border: 1px solid hsl(0, 0%, 0%);
     padding: 5px 20px;
+    transition: all ease-in-out .4s;
+}
+
+.main-grid__header button:hover{
+    background-color: black;
+    color: white;
 }
 
 @media screen and (max-width: 480px){

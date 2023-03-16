@@ -10,6 +10,8 @@ main{
 }
 
 
+
+
 @media screen and (max-width: 480px){
     main{
         width: 80%;
@@ -23,5 +25,11 @@ main{
         outline: none;
         border: 1px solid hsl(0, 0%, 0%);
         padding: 5px 20px;
+        transition: all ease-in-out .4s;
+    }
+
+    .see-btn:hover{
+        background-color: black;
+        color: white;
     }
 }
