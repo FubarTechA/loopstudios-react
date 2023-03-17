@@ -19,6 +19,7 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+THis was a challenge to build a simple landing page, Majorly HTML and CSS with a little Javascript. I built this with react, My first react project, Super proud of this.
 
 ### The challenge
 
